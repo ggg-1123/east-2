@@ -1,9 +1,5 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
-steps:
-  - uses: actions/checkout@v3
-  - run: cd /home/runner/work/east-2/east-2
-  - run: npm install
 
 name: Build and deploy Node.js app to Azure Web App - v3-streameast
 
@@ -61,9 +57,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B945FDFC87B14B458D67B986000CE333 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_9260A0D3483A4A66A38D06A7BE87D469 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_66BB67905C074FC4B9C6E766579F3771 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0FF67713982A48CA9232AE99A9AEDCEA }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_9736E244C90243FC85AB92902867967E }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_6AC2F1913D9A442181597ECFC09A3E53 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
